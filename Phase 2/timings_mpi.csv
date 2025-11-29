@@ -1,0 +1,9 @@
+mode,N,P,time_ms
+strong,4096,1,42
+strong,4096,2,20
+strong,4096,4,21
+strong,4096,8,11
+weak,1024,1,1
+weak,1448,2,3
+weak,2048,4,3
+weak,2896,8,5
