@@ -1,0 +1,469 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 47.22      0.09     0.09  6560980     0.00     0.00  std::vector<int, std::allocator<int> >::operator[](unsigned long) const
+ 22.22      0.12     0.04                             main
+ 11.11      0.14     0.02        2    10.00    10.00  __gnu_cxx::__enable_if<std::__is_scalar<int>::__value, void>::__type std::__fill_a1<int*, int>(int*, int*, int const&)
+  8.33      0.16     0.01  4750142     0.00     0.00  std::vector<int, std::allocator<int> >::operator[](unsigned long)
+  5.56      0.17     0.01   525593     0.00     0.00  clamp255(int)
+  5.56      0.18     0.01        1    10.00    23.24  make_test_image(std::vector<int, std::allocator<int> >&, int)
+  0.00      0.18     0.00        7     0.00     0.00  std::__is_constant_evaluated()
+  0.00      0.18     0.00        6     0.00     0.00  std::__new_allocator<int>::~__new_allocator()
+  0.00      0.18     0.00        5     0.00     0.00  std::char_traits<char>::length(char const*)
+  0.00      0.18     0.00        4     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator()
+  0.00      0.18     0.00        3     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const
+  0.00      0.18     0.00        3     0.00     0.00  std::__new_allocator<char>::~__new_allocator()
+  0.00      0.18     0.00        3     0.00     0.00  void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)
+  0.00      0.18     0.00        3     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)
+  0.00      0.18     0.00        3     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::_Guard(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*)
+  0.00      0.18     0.00        3     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::~_Guard()
+  0.00      0.18     0.00        2     0.00     0.00  int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)
+  0.00      0.18     0.00        2     0.00     0.00  std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const
+  0.00      0.18     0.00        2     0.00     0.00  std::char_traits<char>::compare(char const*, char const*, unsigned long)
+  0.00      0.18     0.00        2     0.00     0.00  void std::_Destroy_aux<true>::__destroy<int*>(int*, int*)
+  0.00      0.18     0.00        2     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long)
+  0.00      0.18     0.00        2     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&)
+  0.00      0.18     0.00        2     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl()
+  0.00      0.18     0.00        2     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long)
+  0.00      0.18     0.00        2     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long)
+  0.00      0.18     0.00        2     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_impl_data::_Vector_impl_data()
+  0.00      0.18     0.00        2     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&)
+  0.00      0.18     0.00        2     0.00     0.00  std::_Vector_base<int, std::allocator<int> >::~_Vector_base()
+  0.00      0.18     0.00        2     0.00     0.00  std::__new_allocator<int>::deallocate(int*, unsigned long)
+  0.00      0.18     0.00        2     0.00     0.00  std::__new_allocator<int>::allocate(unsigned long, void const*)
+  0.00      0.18     0.00        2     0.00    10.00  int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long)
+  0.00      0.18     0.00        2     0.00     0.00  std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&)
+  0.00      0.18     0.00        2     0.00     0.00  std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&)
+  0.00      0.18     0.00        2     0.00    10.00  std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long)
+  0.00      0.18     0.00        2     0.00    10.00  std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&)
+  0.00      0.18     0.00        2     0.00     0.00  std::vector<int, std::allocator<int> >::~vector()
+  0.00      0.18     0.00        2     0.00     0.00  std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long*, int)
+  0.00      0.18     0.00        2     0.00     0.00  void std::_Construct<int>(int*)
+  0.00      0.18     0.00        2     0.00    10.00  int* std::__fill_n_a<int*, unsigned long, int>(int*, unsigned long, int const&, std::random_access_iterator_tag)
+  0.00      0.18     0.00        2     0.00     0.00  int* std::__addressof<int>(int&)
+  0.00      0.18     0.00        2     0.00     0.00  std::__size_to_integer(unsigned long)
+  0.00      0.18     0.00        2     0.00    10.00  int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long)
+  0.00      0.18     0.00        2     0.00    10.00  int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&)
+  0.00      0.18     0.00        2     0.00     0.00  unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      0.18     0.00        2     0.00    10.00  int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&)
+  0.00      0.18     0.00        2     0.00     0.00  void std::_Destroy<int*>(int*, int*)
+  0.00      0.18     0.00        2     0.00    10.00  void std::__fill_a<int*, int>(int*, int*, int const&)
+  0.00      0.18     0.00        2     0.00     0.00  bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+  0.00      0.18     0.00        2     0.00     0.00  __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Range_chk::_S_chk(long, std::integral_constant<bool, true>)
+  0.00      0.18     0.00        2     0.00     0.00  __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::_Save_errno()
+  0.00      0.18     0.00        2     0.00     0.00  __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::~_Save_errno()
+  0.00      0.18     0.00        2     0.00     0.00  operator new(unsigned long, void*)
+  0.00      0.18     0.00        1     0.00     0.00  run_sobel_omp(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> >&, int)
+  0.00      0.18     0.00        1     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1000l> >::count() const
+  0.00      0.18     0.00        1     0.00     0.00  std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+  0.00      0.18     0.00        1     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, long, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+  0.00      0.18     0.00        1     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&)
+  0.00      0.18     0.00        1     0.00     0.00  std::chrono::duration<long, std::ratio<1l, 1000l> >::duration<long, void>(long const&)
+  0.00      0.18     0.00        1     0.00     0.00  std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&)
+  0.00      0.18     0.00        1     0.00     0.00  std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2024 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 5.56% of 0.18 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.04    0.14                 main [1]
+                0.09    0.00 6560980/6560980     std::vector<int, std::allocator<int> >::operator[](unsigned long) const [2]
+                0.01    0.01       1/1           make_test_image(std::vector<int, std::allocator<int> >&, int) [3]
+                0.00    0.02       2/2           std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [6]
+                0.01    0.00  525593/525593      clamp255(int) [14]
+                0.00    0.00  555838/4750142     std::vector<int, std::allocator<int> >::operator[](unsigned long) [13]
+                0.00    0.00       3/3           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [28]
+                0.00    0.00       3/3           std::__new_allocator<char>::~__new_allocator() [26]
+                0.00    0.00       2/2           std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long*, int) [48]
+                0.00    0.00       2/6           std::__new_allocator<int>::~__new_allocator() [22]
+                0.00    0.00       2/2           bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [54]
+                0.00    0.00       2/2           std::vector<int, std::allocator<int> >::~vector() [47]
+                0.00    0.00       1/1           run_sobel_omp(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> >&, int) [59]
+-----------------------------------------------
+                0.09    0.00 6560980/6560980     main [1]
+[2]     47.2    0.09    0.00 6560980         std::vector<int, std::allocator<int> >::operator[](unsigned long) const [2]
+-----------------------------------------------
+                0.01    0.01       1/1           main [1]
+[3]     12.9    0.01    0.01       1         make_test_image(std::vector<int, std::allocator<int> >&, int) [3]
+                0.01    0.00 4194304/4750142     std::vector<int, std::allocator<int> >::operator[](unsigned long) [13]
+-----------------------------------------------
+                0.00    0.02       2/2           int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long) [8]
+[4]     11.1    0.00    0.02       2         int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [4]
+                0.00    0.02       2/2           int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [10]
+                0.00    0.00       2/2           int* std::__addressof<int>(int&) [50]
+                0.00    0.00       2/2           void std::_Construct<int>(int*) [49]
+-----------------------------------------------
+                0.00    0.02       2/2           std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [6]
+[5]     11.1    0.00    0.02       2         std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long) [5]
+                0.00    0.02       2/2           int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&) [9]
+                0.00    0.00       2/4           std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [24]
+-----------------------------------------------
+                0.00    0.02       2/2           main [1]
+[6]     11.1    0.00    0.02       2         std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [6]
+                0.00    0.02       2/2           std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long) [5]
+                0.00    0.00       2/2           std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) [46]
+                0.00    0.00       2/2           std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) [41]
+-----------------------------------------------
+                0.00    0.02       2/2           int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [10]
+[7]     11.1    0.00    0.02       2         int* std::__fill_n_a<int*, unsigned long, int>(int*, unsigned long, int const&, std::random_access_iterator_tag) [7]
+                0.00    0.02       2/2           void std::__fill_a<int*, int>(int*, int*, int const&) [11]
+-----------------------------------------------
+                0.00    0.02       2/2           int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&) [9]
+[8]     11.1    0.00    0.02       2         int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long) [8]
+                0.00    0.02       2/2           int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [4]
+-----------------------------------------------
+                0.00    0.02       2/2           std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long) [5]
+[9]     11.1    0.00    0.02       2         int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&) [9]
+                0.00    0.02       2/2           int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long) [8]
+-----------------------------------------------
+                0.00    0.02       2/2           int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [4]
+[10]    11.1    0.00    0.02       2         int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [10]
+                0.00    0.02       2/2           int* std::__fill_n_a<int*, unsigned long, int>(int*, unsigned long, int const&, std::random_access_iterator_tag) [7]
+                0.00    0.00       2/2           std::__size_to_integer(unsigned long) [51]
+-----------------------------------------------
+                0.00    0.02       2/2           int* std::__fill_n_a<int*, unsigned long, int>(int*, unsigned long, int const&, std::random_access_iterator_tag) [7]
+[11]    11.1    0.00    0.02       2         void std::__fill_a<int*, int>(int*, int*, int const&) [11]
+                0.02    0.00       2/2           __gnu_cxx::__enable_if<std::__is_scalar<int>::__value, void>::__type std::__fill_a1<int*, int>(int*, int*, int const&) [12]
+-----------------------------------------------
+                0.02    0.00       2/2           void std::__fill_a<int*, int>(int*, int*, int const&) [11]
+[12]    11.1    0.02    0.00       2         __gnu_cxx::__enable_if<std::__is_scalar<int>::__value, void>::__type std::__fill_a1<int*, int>(int*, int*, int const&) [12]
+-----------------------------------------------
+                0.00    0.00  555838/4750142     main [1]
+                0.01    0.00 4194304/4750142     make_test_image(std::vector<int, std::allocator<int> >&, int) [3]
+[13]     8.3    0.01    0.00 4750142         std::vector<int, std::allocator<int> >::operator[](unsigned long) [13]
+-----------------------------------------------
+                0.01    0.00  525593/525593      main [1]
+[14]     5.6    0.01    0.00  525593         clamp255(int) [14]
+-----------------------------------------------
+                0.00    0.00       2/7           std::char_traits<char>::compare(char const*, char const*, unsigned long) [33]
+                0.00    0.00       5/7           std::char_traits<char>::length(char const*) [23]
+[21]     0.0    0.00    0.00       7         std::__is_constant_evaluated() [21]
+-----------------------------------------------
+                0.00    0.00       2/6           main [1]
+                0.00    0.00       2/6           std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) [46]
+                0.00    0.00       2/6           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [37]
+[22]     0.0    0.00    0.00       6         std::__new_allocator<int>::~__new_allocator() [22]
+-----------------------------------------------
+                0.00    0.00       2/5           bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [54]
+                0.00    0.00       3/5           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [28]
+[23]     0.0    0.00    0.00       5         std::char_traits<char>::length(char const*) [23]
+                0.00    0.00       5/7           std::__is_constant_evaluated() [21]
+-----------------------------------------------
+                0.00    0.00       2/4           std::vector<int, std::allocator<int> >::~vector() [47]
+                0.00    0.00       2/4           std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long) [5]
+[24]     0.0    0.00    0.00       4         std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [24]
+-----------------------------------------------
+                0.00    0.00       1/3           std::chrono::duration<long, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, long, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [62]
+                0.00    0.00       2/3           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [66]
+[25]     0.0    0.00    0.00       3         std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const [25]
+-----------------------------------------------
+                0.00    0.00       3/3           main [1]
+[26]     0.0    0.00    0.00       3         std::__new_allocator<char>::~__new_allocator() [26]
+-----------------------------------------------
+                0.00    0.00       3/3           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [28]
+[27]     0.0    0.00    0.00       3         void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [27]
+                0.00    0.00       3/3           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::_Guard(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*) [29]
+                0.00    0.00       3/3           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::~_Guard() [30]
+-----------------------------------------------
+                0.00    0.00       3/3           main [1]
+[28]     0.0    0.00    0.00       3         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [28]
+                0.00    0.00       3/5           std::char_traits<char>::length(char const*) [23]
+                0.00    0.00       3/3           void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [27]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [27]
+[29]     0.0    0.00    0.00       3         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::_Guard(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*) [29]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [27]
+[30]     0.0    0.00    0.00       3         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::~_Guard() [30]
+-----------------------------------------------
+                0.00    0.00       2/2           std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long*, int) [48]
+[31]     0.0    0.00    0.00       2         int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [31]
+                0.00    0.00       2/2           __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::_Save_errno() [56]
+                0.00    0.00       2/2           __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Range_chk::_S_chk(long, std::integral_constant<bool, true>) [55]
+                0.00    0.00       2/2           __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::~_Save_errno() [57]
+-----------------------------------------------
+                0.00    0.00       2/2           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&) [65]
+[32]     0.0    0.00    0.00       2         std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const [32]
+-----------------------------------------------
+                0.00    0.00       2/2           bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [54]
+[33]     0.0    0.00    0.00       2         std::char_traits<char>::compare(char const*, char const*, unsigned long) [33]
+                0.00    0.00       2/7           std::__is_constant_evaluated() [21]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Destroy<int*>(int*, int*) [53]
+[34]     0.0    0.00    0.00       2         void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [34]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) [39]
+[35]     0.0    0.00    0.00       2         std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [35]
+                0.00    0.00       2/2           std::__new_allocator<int>::allocate(unsigned long, void const*) [44]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) [41]
+[36]     0.0    0.00    0.00       2         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [36]
+                0.00    0.00       2/2           std::_Vector_base<int, std::allocator<int> >::_Vector_impl_data::_Vector_impl_data() [40]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [42]
+[37]     0.0    0.00    0.00       2         std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [37]
+                0.00    0.00       2/6           std::__new_allocator<int>::~__new_allocator() [22]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [42]
+[38]     0.0    0.00    0.00       2         std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [38]
+                0.00    0.00       2/2           std::__new_allocator<int>::deallocate(int*, unsigned long) [43]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) [41]
+[39]     0.0    0.00    0.00       2         std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) [39]
+                0.00    0.00       2/2           std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [35]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [36]
+[40]     0.0    0.00    0.00       2         std::_Vector_base<int, std::allocator<int> >::_Vector_impl_data::_Vector_impl_data() [40]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [6]
+[41]     0.0    0.00    0.00       2         std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) [41]
+                0.00    0.00       2/2           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [36]
+                0.00    0.00       2/2           std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) [39]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<int, std::allocator<int> >::~vector() [47]
+[42]     0.0    0.00    0.00       2         std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [42]
+                0.00    0.00       2/2           std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [38]
+                0.00    0.00       2/2           std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [37]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [38]
+[43]     0.0    0.00    0.00       2         std::__new_allocator<int>::deallocate(int*, unsigned long) [43]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [35]
+[44]     0.0    0.00    0.00       2         std::__new_allocator<int>::allocate(unsigned long, void const*) [44]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) [46]
+[45]     0.0    0.00    0.00       2         std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [45]
+                0.00    0.00       2/2           unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [52]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [6]
+[46]     0.0    0.00    0.00       2         std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) [46]
+                0.00    0.00       2/2           std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [45]
+                0.00    0.00       2/6           std::__new_allocator<int>::~__new_allocator() [22]
+-----------------------------------------------
+                0.00    0.00       2/2           main [1]
+[47]     0.0    0.00    0.00       2         std::vector<int, std::allocator<int> >::~vector() [47]
+                0.00    0.00       2/4           std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [24]
+                0.00    0.00       2/2           std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [42]
+                0.00    0.00       2/2           void std::_Destroy<int*>(int*, int*) [53]
+-----------------------------------------------
+                0.00    0.00       2/2           main [1]
+[48]     0.0    0.00    0.00       2         std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long*, int) [48]
+                0.00    0.00       2/2           int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [31]
+-----------------------------------------------
+                0.00    0.00       2/2           int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [4]
+[49]     0.0    0.00    0.00       2         void std::_Construct<int>(int*) [49]
+                0.00    0.00       2/2           operator new(unsigned long, void*) [58]
+-----------------------------------------------
+                0.00    0.00       2/2           int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [4]
+[50]     0.0    0.00    0.00       2         int* std::__addressof<int>(int&) [50]
+-----------------------------------------------
+                0.00    0.00       2/2           int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&) [10]
+[51]     0.0    0.00    0.00       2         std::__size_to_integer(unsigned long) [51]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [45]
+[52]     0.0    0.00    0.00       2         unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [52]
+-----------------------------------------------
+                0.00    0.00       2/2           std::vector<int, std::allocator<int> >::~vector() [47]
+[53]     0.0    0.00    0.00       2         void std::_Destroy<int*>(int*, int*) [53]
+                0.00    0.00       2/2           void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [34]
+-----------------------------------------------
+                0.00    0.00       2/2           main [1]
+[54]     0.0    0.00    0.00       2         bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*) [54]
+                0.00    0.00       2/5           std::char_traits<char>::length(char const*) [23]
+                0.00    0.00       2/2           std::char_traits<char>::compare(char const*, char const*, unsigned long) [33]
+-----------------------------------------------
+                0.00    0.00       2/2           int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [31]
+[55]     0.0    0.00    0.00       2         __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Range_chk::_S_chk(long, std::integral_constant<bool, true>) [55]
+-----------------------------------------------
+                0.00    0.00       2/2           int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [31]
+[56]     0.0    0.00    0.00       2         __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::_Save_errno() [56]
+-----------------------------------------------
+                0.00    0.00       2/2           int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [31]
+[57]     0.0    0.00    0.00       2         __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::~_Save_errno() [57]
+-----------------------------------------------
+                0.00    0.00       2/2           void std::_Construct<int>(int*) [49]
+[58]     0.0    0.00    0.00       2         operator new(unsigned long, void*) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[59]     0.0    0.00    0.00       1         run_sobel_omp(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> >&, int) [59]
+                0.00    0.00       1/1           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&) [65]
+                0.00    0.00       1/1           std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [61]
+                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1000l> >::count() const [60]
+-----------------------------------------------
+                0.00    0.00       1/1           run_sobel_omp(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> >&, int) [59]
+[60]     0.0    0.00    0.00       1         std::chrono::duration<long, std::ratio<1l, 1000l> >::count() const [60]
+-----------------------------------------------
+                0.00    0.00       1/1           run_sobel_omp(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> >&, int) [59]
+[61]     0.0    0.00    0.00       1         std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [61]
+                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, long, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [62]
+-----------------------------------------------
+                0.00    0.00       1/1           std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [61]
+[62]     0.0    0.00    0.00       1         std::chrono::duration<long, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, long, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [62]
+                0.00    0.00       1/3           std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const [25]
+                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1000l> >::duration<long, void>(long const&) [64]
+-----------------------------------------------
+                0.00    0.00       1/1           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [66]
+[63]     0.0    0.00    0.00       1         std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&) [63]
+-----------------------------------------------
+                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, long, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [62]
+[64]     0.0    0.00    0.00       1         std::chrono::duration<long, std::ratio<1l, 1000l> >::duration<long, void>(long const&) [64]
+-----------------------------------------------
+                0.00    0.00       1/1           run_sobel_omp(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> >&, int) [59]
+[65]     0.0    0.00    0.00       1         std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&) [65]
+                0.00    0.00       2/2           std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const [32]
+                0.00    0.00       1/1           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [66]
+-----------------------------------------------
+                0.00    0.00       1/1           std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&) [65]
+[66]     0.0    0.00    0.00       1         std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [66]
+                0.00    0.00       2/3           std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const [25]
+                0.00    0.00       1/1           std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&) [63]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2024 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [59] run_sobel_omp(std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> >&, int) [26] std::__new_allocator<char>::~__new_allocator() [49] void std::_Construct<int>(int*)
+   [3] make_test_image(std::vector<int, std::allocator<int> >&, int) [43] std::__new_allocator<int>::deallocate(int*, unsigned long) [7] int* std::__fill_n_a<int*, unsigned long, int>(int*, unsigned long, int const&, std::random_access_iterator_tag)
+  [14] clamp255(int)          [44] std::__new_allocator<int>::allocate(unsigned long, void const*) [50] int* std::__addressof<int>(int&)
+  [31] int __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int) [22] std::__new_allocator<int>::~__new_allocator() [51] std::__size_to_integer(unsigned long)
+  [32] std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::time_since_epoch() const [4] int* std::__uninitialized_default_n_1<true>::__uninit_default_n<int*, unsigned long>(int*, unsigned long) [21] std::__is_constant_evaluated()
+  [25] std::chrono::duration<long, std::ratio<1l, 1000000000l> >::count() const [61] std::enable_if<std::chrono::__is_duration<std::chrono::duration<long, std::ratio<1l, 1000l> > >::value, std::chrono::duration<long, std::ratio<1l, 1000l> > >::type std::chrono::duration_cast<std::chrono::duration<long, std::ratio<1l, 1000l> >, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [8] int* std::__uninitialized_default_n<int*, unsigned long>(int*, unsigned long)
+  [60] std::chrono::duration<long, std::ratio<1l, 1000l> >::count() const [62] std::chrono::duration<long, std::ratio<1l, 1000l> > std::chrono::__duration_cast_impl<std::chrono::duration<long, std::ratio<1l, 1000l> >, std::ratio<1l, 1000000l>, long, true, false>::__cast<long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [9] int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&)
+   [2] std::vector<int, std::allocator<int> >::operator[](unsigned long) const [63] std::chrono::duration<long, std::ratio<1l, 1000000000l> >::duration<long, void>(long const&) [52] unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  [23] std::char_traits<char>::length(char const*) [64] std::chrono::duration<long, std::ratio<1l, 1000l> >::duration<long, void>(long const&) [10] int* std::fill_n<int*, unsigned long, int>(int*, unsigned long, int const&)
+  [33] std::char_traits<char>::compare(char const*, char const*, unsigned long) [65] std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >(std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&, std::chrono::time_point<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > > const&) [53] void std::_Destroy<int*>(int*, int*)
+  [34] void std::_Destroy_aux<true>::__destroy<int*>(int*, int*) [66] std::common_type<std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >::type std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >(std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&, std::chrono::duration<long, std::ratio<1l, 1000000000l> > const&) [11] void std::__fill_a<int*, int>(int*, int*, int const&)
+  [35] std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) [45] std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) [12] __gnu_cxx::__enable_if<std::__is_scalar<int>::__value, void>::__type std::__fill_a1<int*, int>(int*, int*, int const&)
+  [36] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) [46] std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) [54] bool std::operator==<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*)
+  [37] std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() [5] std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long) [55] __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Range_chk::_S_chk(long, std::integral_constant<bool, true>)
+  [38] std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) [6] std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [56] __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::_Save_errno()
+  [39] std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) [47] std::vector<int, std::allocator<int> >::~vector() [57] __gnu_cxx::__stoa<long, int, char, int>(long (*)(char const*, char**, int), char const*, char const*, unsigned long*, int)::_Save_errno::~_Save_errno()
+  [40] std::_Vector_base<int, std::allocator<int> >::_Vector_impl_data::_Vector_impl_data() [13] std::vector<int, std::allocator<int> >::operator[](unsigned long) [29] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::_Guard(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*)
+  [24] std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() [27] void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) [30] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)::_Guard::~_Guard()
+  [41] std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) [28] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [58] operator new(unsigned long, void*)
+  [42] std::_Vector_base<int, std::allocator<int> >::~_Vector_base() [48] std::__cxx11::stoi(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned long*, int) [1] main
