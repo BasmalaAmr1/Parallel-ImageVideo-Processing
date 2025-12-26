@@ -1,0 +1,16 @@
+mode,N,threads,time_ms
+MODE=SEQUENTIAL N=1024 time_ms=9
+MODE=OPENMP N=1024 threads=1 time_ms=9
+MODE=OPENMP N=1024 threads=2 time_ms=7
+MODE=OPENMP N=1024 threads=4 time_ms=5
+MODE=OPENMP N=1024 threads=8 time_ms=3
+MODE=SEQUENTIAL N=2048 time_ms=13
+MODE=OPENMP N=2048 threads=1 time_ms=12
+MODE=OPENMP N=2048 threads=2 time_ms=6
+MODE=OPENMP N=2048 threads=4 time_ms=6
+MODE=OPENMP N=2048 threads=8 time_ms=3
+MODE=SEQUENTIAL N=4096 time_ms=50
+MODE=OPENMP N=4096 threads=1 time_ms=49
+MODE=OPENMP N=4096 threads=2 time_ms=25
+MODE=OPENMP N=4096 threads=4 time_ms=26
+MODE=OPENMP N=4096 threads=8 time_ms=14
