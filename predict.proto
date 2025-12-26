@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+service PredictService {
+  rpc Predict (PredictRequest) returns (PredictResponse) {}
+  rpc Health  (Empty) returns (HealthStatus) {}
+}
+
+message PredictRequest {
+  string input = 1;       // comma-separated floats
+  string request_id = 2;  // idempotency
+}
+
+message PredictResponse {
+  string output = 1;
+  double latency_ms = 2;
+}
+
+message Empty {}
+
+message HealthStatus {
+  bool alive = 1;
+}

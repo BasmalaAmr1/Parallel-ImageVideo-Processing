@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package sobel;
+
+// Request to run the Sobel edge-detection algorithm using the existing
+// C++ implementation (edge_sobel) on an N x N synthetic image.
+message SobelRequest {
+  // Image dimension N (image is N x N).
+  int32 size = 1;
+
+  // Algorithm mode passed directly to edge_sobel: "seq" or "omp".
+  string mode = 2;
+
+  // Number of threads when mode == "omp"; ignored otherwise.
+  int32 threads = 3;
+}
+
+// Response containing execution metadata for the request.
+message SobelResponse {
+  // Echoed request parameters.
+  int32 size = 1;
+  string mode = 2;
+  int32 threads = 3;
+
+  // Wall-clock time (in milliseconds) measured on the gRPC server for
+  // running the edge_sobel binary for this request.
+  double server_elapsed_ms = 4;
+
+  // If available, the time_ms value printed by edge_sobel itself.
+  // If parsing fails this will be 0.0.
+  double algo_reported_ms = 5;
+
+  // Logical identifier of the replica that handled this request.
+  string replica_id = 6;
+}
+
+// gRPC service that wraps the existing Sobel implementation.
+service SobelService {
+  rpc ProcessImage (SobelRequest) returns (SobelResponse);
+}
