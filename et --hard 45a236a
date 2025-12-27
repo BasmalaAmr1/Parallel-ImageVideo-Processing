@@ -1,0 +1,13 @@
+[33me70acd1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Add gitignore to exclude Python cache files
+[33mfd1cbea[m My updates
+[33m45a236a[m Final project upload
+[33m65f7a4c[m Remove submodule conflict
+[33m46223e6[m Initial project upload
+[33mf95ba44[m Resolve merge conflicts
+[33mcc34cb9[m Fix nested git repository issue
+[33m94b3ffe[m Resolve README merge conflict
+[33m849809e[m Initial commit
+[33m06d548f[m Added Phase 2 MPI code, benchmarks, plots, and documentation
+[33m6ba620a[m Add files via upload
+[33m5bd5183[m Add Sobel edge detection implementation
+[33m030b932[m Initial commit
