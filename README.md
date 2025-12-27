@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Phase 3 – Fault-Tolerant Distributed Sobel Service
 
 This Phase 3 folder adds a **fault-tolerant distributed system** on top of your
@@ -235,4 +234,3 @@ This behavior satisfies the requirements:
 =======
 # Parallel-ImageVideo-Processing
 Parallel image/video processing using OpenMP, MPI, CUDA, and Spark.
->>>>>>> 06d548f4bb406a35038ab2b897679446379f9906
